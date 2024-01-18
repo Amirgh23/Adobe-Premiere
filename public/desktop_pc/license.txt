@@ -1,11 +1,11 @@
 Model Information:
-* title:	Gaming Desktop PC
-* source:	https://sketchfab.com/3d-models/gaming-desktop-pc-d1d8282c9916438091f11aeb28787b66
-* author:	Yolala1232 (https://sketchfab.com/Yolala1232)
+* title:	Upgraded Titan Tv Man (Remaster)
+* source:	https://sketchfab.com/3d-models/upgraded-titan-tv-man-remaster-729c48d6a1a242838f383ecac820f951
+* author:	X9_YT (https://sketchfab.com/X9_YT)
 
 Model License:
 * license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
 * requirements:	Author must be credited. Commercial use is allowed.
 
 If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
-This work is based on "Gaming Desktop PC" (https://sketchfab.com/3d-models/gaming-desktop-pc-d1d8282c9916438091f11aeb28787b66) by Yolala1232 (https://sketchfab.com/Yolala1232) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+This work is based on "Upgraded Titan Tv Man (Remaster)" (https://sketchfab.com/3d-models/upgraded-titan-tv-man-remaster-729c48d6a1a242838f383ecac820f951) by X9_YT (https://sketchfab.com/X9_YT) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

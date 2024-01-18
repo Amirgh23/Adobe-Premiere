@@ -1,9 +1,63 @@
-import React from 'react'
+/* eslint-disable react/no-unknown-property */
+/* eslint-disable no-unused-vars */
 
-const Computers = () => {
+
+import { Suspense, useEffect, useState } from "react";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import CanvasLoader from "../Loader";
+const Computers = ({ isMobile }) => {
+  const computer = useGLTF("./desktop_pc/scene.gltf");
   return (
-    <div>Computers</div>
-  )
-}
+    <mesh>
+      <hemisphereLight intensity={ 3 } />
+      <pointLight intensity={ 400 } />
+      <spotLight position={ [-20, 50, 10] } intensity={ 1 } angle={ 0.12 } />
+      <primitive
+        object={ computer.scene }
+        scale={ isMobile ? 2.3 : 4 }
+        position={ isMobile ? [4, -6, 0] : [7, -6, 0] }
+        rotation={ [0, 1, 0] }
+        penumbra={ 1 }
+        intensity={ 12 }
+        castShadow
 
-export default Computers
+
+      />
+    </mesh>
+  );
+};
+const ComputersCanvas = () => {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width:500px)')
+    setIsMobile(mediaQuery.matches);
+    const handleMediaQueryChange = (event) => {
+      setIsMobile(event.matches)
+    }
+    mediaQuery.addEventListener('change', handleMediaQueryChange);
+    return () => {
+      mediaQuery.removeEventListener('change', handleMediaQueryChange);
+    }
+  }, [])
+
+  return (
+    <Canvas
+      frameloop="demand"
+      shadows
+      camera={ { position: [-2, -4, 25], fov: 35 } }
+      gl={ { preserveDrawingBuffer: true } }
+    >
+      <Suspense >
+        <OrbitControls
+          enableZoom={ false }
+          maxPolarAngle={ Math.PI / 2 }
+          minPolarAngle={ Math.PI / 2 }
+        />
+        <Computers isMobile={ isMobile } />
+      </Suspense>
+      <Preload all />
+    </Canvas>
+  );
+};
+export default ComputersCanvas;
