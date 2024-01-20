@@ -12,7 +12,7 @@ const Hero = () => {
           <div className='w-5 h-5 rounded-full bg-tertiary' />
           <div className='w-1 sm:h-80 h-40 bg-gradient-to-b from-tertiary' />
         </div>
-        <div className="z-30">
+        <div className="z-10">
           <h1 className={ `${styles.heroHeadText} text-white `  }>
             Hi, I'm <span className='text-[#EC0FFE]'>Amirreza Ghaffarian </span>
           </h1>
