@@ -10,7 +10,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false)
   return (
     <nav
-      className={ `${styles.paddingX} bg-transparent backdrop-blur-md py-2   w-full flex items-center   border-b-2 border-secondary shadow-xl   fixed  z-20` }
+      className={ `${styles.paddingX} bg-transparent backdrop-blur-md py-2   w-full flex items-center    border-b-2 border-secondary shadow-xl   fixed  z-20` }
     >
       <div className=' w-full flex justify-between items-center max-w-7xl mx-auto bg-transparent '>
         <Link
@@ -23,7 +23,7 @@ const Navbar = () => {
         >
           <img src={ logo } className='w-9 h-9   object-contain' />
           <div className='text-white text-[18px] font-bold cursor-pointer flex'>
-            <img src={ merlin } alt="merlin" className='w-20 ' />  &nbsp;
+            <img src={ merlin } alt="merlin" className='w-24 ' />  &nbsp;
             <span className='text-fortiary sm:block hidden'>
               | AMIRREZA
             </span>
