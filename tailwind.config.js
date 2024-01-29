@@ -7,9 +7,9 @@ module.exports = {
     extend: {
       colors: {
         back: "#000000",
-        primary: "#000000",
+        primary: "#0A041A",
         secondary: "#DF00FF",
-        tertiary: "#BF00FF",
+        tertiary: "#73C4FE",
         fortiary:"#8A00FF",
         "black-100": "#100d25",
         "black-200": "#090325",
@@ -22,9 +22,10 @@ module.exports = {
         xs: "450px",
       },
       backgroundImage: {
-        "hero-pattern": "url('/src/assets/herobg.png')",
+         "hero-pattern": "url('/src/assets/herobg.gif')",
       },
     },
   },
   plugins: [],
 };
+// EC0FFE

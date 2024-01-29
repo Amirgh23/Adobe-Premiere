@@ -4,7 +4,7 @@ import { styles } from '../styles'
 import { ComputersCanvas } from './canvas'
 const Hero = () => {
   return (
-    <section className='relative w-full h-screen mx-auto '>
+    <section className='relative w-full h-screen mx-auto backdrop-blur-lg'>
       <div
         className={ `${styles.paddingX}  absolute  inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5 ` }
       >
@@ -17,8 +17,8 @@ const Hero = () => {
             Hi, I'm <span className='text-[#EC0FFE]'>Amirreza Ghaffarian </span>
           </h1>
           <p className={ `${styles.heroSubText} mt-2 text-white-100` }>
-            I develop 3D visuals,user
-            <br className='sm:block hidden' /> interface and web application
+            Frontend developer
+            <br className='sm:block hidden' /> & AI Engineer
           </p>
         </div>
       </div>

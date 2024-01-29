@@ -44,7 +44,15 @@ const About = () => {
         variants={ fadeIn("", "", 0.1, 1) }
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        skills
+        Hello dude
+        <br />
+        my name is Amirreza Ghaffarian you can call me Merlin
+        I am 24 .
+        <br />
+        I am living in iran
+        <br />
+        i have taken bachelor computer engineer (AI) degree also i am gonna migrate for master AI and Robotic engineer degree
+
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
         { services.map((service, index) => (
@@ -55,4 +63,4 @@ const About = () => {
   );
 };
 
-export default SectionWrapper(About,"about");
+export default SectionWrapper(About, "about");
