@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react/no-unknown-property */
 /* eslint-disable no-unused-vars */
 
@@ -14,9 +15,10 @@ const Computers = ({ isMobile }) => {
       <pointLight intensity={ 55 } />
       <spotLight position={ [-20, 50, 10] } intensity={ 1 } angle={ 0.12 } />
       <primitive
+
         object={ computer.scene }
         scale={ isMobile ? 2.8 : 3.5 }
-        position={ isMobile ? [0, -3, 0] : [0, -3, 0] }
+        position={ isMobile ? [0, -3, 0] : [0, -3.5, 0] }
         rotation={ [0, 31, 0] }
         penumbra={ 1 }
         intensity={ 12 }
@@ -43,13 +45,16 @@ const ComputersCanvas = () => {
 
   return (
     <Canvas
+
       frameloop="demand"
       shadows
-      camera={ { position: [-2, -4, 15], fov: 80 } }
+      camera={ { position: [-2, -4, 15], fov: 85 } }
       gl={ { preserveDrawingBuffer: true } }
     >
       <Suspense >
         <OrbitControls
+          autoRotate
+          autoRotateSpeed={1.2}
           enableZoom={ false }
           maxPolarAngle={ Math.PI / 2 }
           minPolarAngle={ Math.PI / 2 }
